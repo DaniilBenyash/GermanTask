@@ -21,7 +21,7 @@ export const Button: FC<ButtonProps> = ({ type, onClick }) => {
     return (
       <div className={styles.mobile_button}>
         <ButtonUI type="default_mobile" onClick={onClick}>
-          +
+          <p className={styles.plus}>+</p>
         </ButtonUI>
       </div>
     );
