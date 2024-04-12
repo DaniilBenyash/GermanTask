@@ -7,7 +7,7 @@ import { useAddUser, useDeleteUser, useGetUsers, useUpdateUser } from "./api";
 import { Contact } from "../../types/types";
 
 export const MainPage = () => {
-  const { isLoading, data } = useGetUsers();
+  const { data } = useGetUsers();
   const { mutate: onAddUser } = useAddUser();
   const { mutate: onUpdateUser } = useUpdateUser();
   const { mutate: onDeleteUser } = useDeleteUser();
