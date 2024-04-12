@@ -14,7 +14,7 @@ export const Modal: FC<PortalProps> = ({ isOpen, children, onClose }) => {
   useEffect(() => {
     if (isOpen) document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = "scrollY";
     };
   }, [isOpen]);
 

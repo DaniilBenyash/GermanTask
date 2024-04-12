@@ -18,8 +18,8 @@ export const useGetUsers = () => {
   return useQuery({
     queryKey: contactsKeys.contacts,
     queryFn: async () => {
-      const response = await contactsApi.get<Contact[]>("/");
-      return response.data;
+      const response = await contactsApi.get("/");
+      return response.data.responseObject as Contact[];
     },
   });
 };
