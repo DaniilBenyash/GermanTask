@@ -1,6 +1,6 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Test task
 
-This project has been created using **webpack-cli**, you can now run
+
 
 ```
 npm run build

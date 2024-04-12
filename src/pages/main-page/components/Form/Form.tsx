@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styles from "./Form.module.scss";
-import { Contact } from "../../api";
+import { Contact } from "@/pages/main-page/api";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Button, Input, Form as FormUI } from "../../../../ui-kit";
+import { Button, Input, Form as FormUI } from "@/ui-kit";
 
 type FormProps = {
   contact: Partial<Contact> | null;
@@ -46,20 +46,17 @@ export const Form: FC<FormProps> = ({
       <div className={styles.data_container}>
         <h2 className={styles.title}>Eintrag bearbeiten</h2>
         <div className={styles.input_container}>
+          <Input placeholder="Vorname*" {...register("firstname", { required: true })} />
+          <Input placeholder="Nachname*" {...register("lastname", { required: true })} />
           <Input
-            data-testid="VornameInput"
-            placeholder="Vorname*"
-            {...register("firstname", { required: true })}
-          />
-          <Input
-            data-testid="NachnameInput"
-            placeholder="Nachname*"
-            {...register("lastname", { required: true })}
-          />
-          <Input
-            data-testid="E-MailInput"
             placeholder="E-Mail*"
-            {...register("email", { required: true })}
+            {...register("email", {
+              required: true,
+              pattern: {
+                value: /\S+@\S+\.\S+/,
+                message: "Entered value does not match email format",
+              },
+            })}
           />
         </div>
       </div>

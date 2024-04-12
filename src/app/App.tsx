@@ -1,5 +1,5 @@
 import "./styles/global.scss";
-import { MainPage } from "../pages/main-page";
+import { MainPage } from "@/pages/main-page";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 export const App: React.FC = () => {
