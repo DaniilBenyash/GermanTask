@@ -33,7 +33,11 @@ exports[`renders correctly 1`] = `
         className="button button_default_mobile"
         onClick={[Function]}
       >
-        +
+        <p
+          className="plus"
+        >
+          +
+        </p>
       </button>
     </div>
     <div

@@ -1,4 +1,4 @@
-import { createAPI } from "../../../helpers";
+import { createAPI } from "../../../utils";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Contact } from "../../../types/types";
 
