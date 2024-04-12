@@ -1,11 +1,10 @@
 import styles from "./MainPage.module.scss";
-import { Header } from "@/modules/Header";
-import { Card } from "@/modules/Card";
+import { Header, Card, Modal } from "../../components";
 import { Button } from "./components/Button";
-import { Modal } from "@/modules/Modal";
 import { Form } from "./components/Form";
 import { useState } from "react";
-import { Contact, useAddUser, useDeleteUser, useGetUsers, useUpdateUser } from "./api";
+import { useAddUser, useDeleteUser, useGetUsers, useUpdateUser } from "./api";
+import { Contact } from "../../types/types";
 
 export const MainPage = () => {
   const { isLoading, data } = useGetUsers();

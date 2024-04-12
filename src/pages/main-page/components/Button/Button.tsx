@@ -1,6 +1,6 @@
 import { FC } from "react";
 import styles from "./Button.module.scss";
-import { Button as ButtonUI } from "@/ui-kit";
+import { Button as ButtonUI } from "../../../../components";
 
 export type ButtonProps = {
   type: "desktop" | "mobile";

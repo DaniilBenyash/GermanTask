@@ -1,6 +1,12 @@
 import { createAPI } from "../../../helpers";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Contact } from "../../../types/types";
+
+export interface Contact {
+  id: number;
+  firstname: string;
+  lastname: string;
+  email: string;
+}
 
 const contactsKeys = {
   contacts: ["contacts"],
@@ -12,8 +18,8 @@ export const useGetUsers = () => {
   return useQuery({
     queryKey: contactsKeys.contacts,
     queryFn: async () => {
-      const response = await contactsApi.get<Contact[]>("/");
-      return response.data;
+      const response = await contactsApi.get("/");
+      return response.data.responseObject as Contact[];
     },
   });
 };
