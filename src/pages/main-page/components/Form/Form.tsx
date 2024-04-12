@@ -9,13 +9,19 @@ type FormProps = {
   onAddUser: (contact: Contact) => void;
   onUpdateUser: (contact: Contact) => void;
   onDeleteUser: (id: number) => void;
+  onCloseModal: () => void;
 };
 
-export const Form: FC<FormProps> = ({ contact, onAddUser, onDeleteUser, onUpdateUser }) => {
+export const Form: FC<FormProps> = ({
+  contact,
+  onAddUser,
+  onDeleteUser,
+  onUpdateUser,
+  onCloseModal,
+}) => {
   const {
     register,
     handleSubmit,
-    reset,
     formState: { isValid },
   } = useForm<Contact>({
     defaultValues: { ...contact },
@@ -23,14 +29,17 @@ export const Form: FC<FormProps> = ({ contact, onAddUser, onDeleteUser, onUpdate
   const onSubmit: SubmitHandler<Contact> = (contact) => {
     if (!contact.id) {
       onAddUser(contact);
+      onCloseModal();
       return;
     }
     onUpdateUser(contact);
+    onCloseModal();
   };
 
   const handleDelete = () => {
     if (!contact?.id) return;
     onDeleteUser(contact.id);
+    onCloseModal();
   };
   return (
     <FormUI onSubmit={handleSubmit(onSubmit)}>
@@ -49,7 +58,9 @@ export const Form: FC<FormProps> = ({ contact, onAddUser, onDeleteUser, onUpdate
           </Button>
         )}
         <div className={styles.right_section_buttons}>
-          <Button type="primary">ABBRECHEN</Button>
+          <Button type="primary" onClick={onCloseModal}>
+            ABBRECHEN
+          </Button>
           <Button type="default" disabled={!isValid}>
             SPEICHERN
           </Button>

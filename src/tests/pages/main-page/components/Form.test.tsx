@@ -9,14 +9,15 @@ it("renders correctly", () => {
         contact={null}
         onAddUser={function (contact: Contact): void {
           throw new Error("Function not implemented.");
-        }}
+        } }
         onUpdateUser={function (contact: Contact): void {
           throw new Error("Function not implemented.");
-        }}
+        } }
         onDeleteUser={function (id: number): void {
           throw new Error("Function not implemented.");
-        }}
-      />,
+        } } onCloseModal={function (): void {
+          throw new Error("Function not implemented.");
+        } }      />,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();

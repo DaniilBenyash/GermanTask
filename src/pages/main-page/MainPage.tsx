@@ -26,6 +26,7 @@ export const MainPage = () => {
     setContact(contact);
     setIsOpenModal(true);
   };
+
   return (
     <main className={styles.main_page}>
       <Header />
@@ -51,6 +52,7 @@ export const MainPage = () => {
           onUpdateUser={onUpdateUser}
           onAddUser={onAddUser}
           onDeleteUser={onDeleteUser}
+          onCloseModal={handleCloseModal}
         />
       </Modal>
     </main>
