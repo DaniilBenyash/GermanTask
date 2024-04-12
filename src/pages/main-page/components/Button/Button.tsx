@@ -1,7 +1,6 @@
 import { FC } from "react";
 import styles from "./Button.module.scss";
 import { Button as ButtonUI } from "../../../../ui-kit";
-import icon from "../../../../../public/plus.png";
 
 type ButtonProps = {
   type: "desktop" | "mobile";
@@ -22,7 +21,7 @@ export const Button: FC<ButtonProps> = ({ type, onClick }) => {
     return (
       <div className={styles.mobile_button}>
         <ButtonUI type="default_mobile" onClick={onClick}>
-          <img src={icon} />
+          +
         </ButtonUI>
       </div>
     );

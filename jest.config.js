@@ -6,5 +6,6 @@ module.exports = {
   modulePaths: ["<rootDir>"],
   moduleNameMapper: {
     "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/identity-obj-proxy",
+    '\\.(jpg|jpeg|png|svg)$': 'identity-obj-proxy',
   },
 };

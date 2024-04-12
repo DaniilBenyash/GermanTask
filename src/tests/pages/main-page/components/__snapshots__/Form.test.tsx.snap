@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="data_container"
+  >
+    <h2
+      className="title"
+    >
+      Eintrag bearbeiten
+    </h2>
+    <div
+      className="input_container"
+    >
+      <div
+        className="container"
+      >
+        <input
+          className="input"
+          name="firstname"
+          onChange={[Function]}
+          placeholder=""
+        />
+        <label
+          className="label"
+        >
+          Vorname*
+        </label>
+      </div>
+      <div
+        className="container"
+      >
+        <input
+          className="input"
+          name="lastname"
+          onChange={[Function]}
+          placeholder=""
+        />
+        <label
+          className="label"
+        >
+          Nachname*
+        </label>
+      </div>
+      <div
+        className="container"
+      >
+        <input
+          className="input"
+          name="email"
+          onChange={[Function]}
+          placeholder=""
+        />
+        <label
+          className="label"
+        >
+          E-Mail*
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="button_container"
+  >
+    <div
+      className="right_section_buttons"
+    >
+      <button
+        className="button button_primary"
+      >
+        ABBRECHEN
+      </button>
+      <button
+        className="button button_default"
+        disabled={true}
+      >
+        SPEICHERN
+      </button>
+    </div>
+  </div>
+</form>
+`;

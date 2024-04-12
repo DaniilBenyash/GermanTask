@@ -16,9 +16,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.mobile_button {
-  display: none;
-}
+
 .box_contact {
   width: 100%;
 }
@@ -32,14 +30,5 @@
     width: 100%;
     gap: 0;
     grid-template-columns: 1fr;
-  }
-  .desktop_button {
-    display: none;
-  }
-  .mobile_button {
-    display: block;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
   }
 }

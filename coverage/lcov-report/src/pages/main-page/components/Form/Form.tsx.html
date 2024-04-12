@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">56.25% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>9/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">25% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/12</span>
+                <span class='fraction'>3/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">33.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>1/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>8/14</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -124,40 +124,40 @@
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
 <a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -184,10 +184,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { FC } from "react";
-<span class="cstat-no" title="statement not covered" >import styles from "./Form.module.scss";</span>
+import styles from "./Form.module.scss";
 import { Contact } from "../../api";
-<span class="cstat-no" title="statement not covered" >import { SubmitHandler, useForm } from "react-hook-form";</span>
-<span class="cstat-no" title="statement not covered" >import { Button, Input, Form as FormUI } from "../../../../ui-kit";</span>
+import { SubmitHandler, useForm } from "react-hook-form";
+import { Button, Input, Form as FormUI } from "../../../../ui-kit";
 &nbsp;
 type FormProps = {
   contact: Partial&lt;Contact&gt; | null;
@@ -196,16 +196,16 @@ type FormProps = {
   onDeleteUser: (id: number) =&gt; void;
 };
 &nbsp;
-export const <span class="cstat-no" title="statement not covered" >Form: FC&lt;FormProps&gt; = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(</span>{</span> contact, onAddUser, onDeleteUser, onUpdateUser }) =&gt; {</span>
+export const Form: FC&lt;FormProps&gt; = ({ contact, onAddUser, onDeleteUser, onUpdateUser }) =&gt; {
   const {
     register,
     handleSubmit,
     reset,
     formState: { isValid },
-  } = <span class="cstat-no" title="statement not covered" >useForm&lt;Contact&gt;({</span>
+  } = useForm&lt;Contact&gt;({
     defaultValues: { ...contact },
   });
-  const onSubmit: SubmitHandler&lt;Contact&gt; = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(c</span>ontact) =&gt; {</span>
+  const onSubmit: SubmitHandler&lt;Contact&gt; = <span class="fstat-no" title="function not covered" >(c</span>ontact) =&gt; {
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (!contact.id) {</span>
 <span class="cstat-no" title="statement not covered" >      onAddUser(contact);</span>
 <span class="cstat-no" title="statement not covered" >      return;</span>
@@ -213,11 +213,11 @@ export const <span class="cstat-no" title="statement not covered" >Form: FC&lt;F
 <span class="cstat-no" title="statement not covered" >    onUpdateUser(contact);</span>
   };
 &nbsp;
-  const handleDelete = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >() =</span>&gt; {</span>
+  const handleDelete = <span class="fstat-no" title="function not covered" >() =</span>&gt; {
 <span class="cstat-no" title="statement not covered" >    <span class="missing-if-branch" title="if path not taken" >I</span>if (!contact?.id) <span class="cstat-no" title="statement not covered" >return;</span></span>
 <span class="cstat-no" title="statement not covered" >    onDeleteUser(contact.id);</span>
   };
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  return (
     &lt;FormUI onSubmit={handleSubmit(onSubmit)}&gt;
       &lt;div className={styles.data_container}&gt;
         &lt;h2 className={styles.title}&gt;Eintrag bearbeiten&lt;/h2&gt;
@@ -228,8 +228,8 @@ export const <span class="cstat-no" title="statement not covered" >Form: FC&lt;F
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;div className={styles.button_container}&gt;
-        {contact?.id &amp;&amp; (
-          &lt;Button type="secondary" onClick={handleDelete}&gt;
+        {<span class="branch-1 cbranch-no" title="branch not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >contact?.i</span>d </span>&amp;&amp; (
+<span class="branch-1 cbranch-no" title="branch not covered" >          &lt;Button type="secondary" onClick={handleDelete}&gt;</span>
             LÖSCHEN
           &lt;/Button&gt;
         )}
@@ -250,7 +250,7 @@ export const <span class="cstat-no" title="statement not covered" >Form: FC&lt;F
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-04-12T06:31:04.486Z
+                at 2024-04-12T07:53:56.062Z
             </div>
         <script src="../../../../../prettify.js"></script>
         <script>

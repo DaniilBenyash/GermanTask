@@ -1,10 +1,9 @@
-import { FC, ReactNode } from "react";
+import { FC, PropsWithChildren, ReactNode } from "react";
 import styles from "./Button.module.scss";
 import cn from "classnames";
 
-type ButtonProps = {
+interface ButtonProps extends PropsWithChildren {
   type?: "default" | "primary" | "secondary" | "default_mobile";
-  children: ReactNode;
   onClick?: () => void;
   disabled?: boolean;
 };

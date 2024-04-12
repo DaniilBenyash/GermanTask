@@ -5,7 +5,6 @@ type InputProps = {
   placeholder: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   name: string;
-  ref: Ref<HTMLInputElement>;
 };
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
