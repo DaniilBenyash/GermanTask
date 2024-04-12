@@ -4,41 +4,31 @@ exports[`renders correctly 1`] = `
 <main
   className="main_page"
 >
-  <header
-    className="header"
-  >
-    <h1
-      className="title"
-    >
-      ADDRESSBUCH
-    </h1>
-  </header>
+  <div>
+    Header Mock
+  </div>
   <section
     className="section"
   >
-    <div
-      className="desktop_button"
+    <button
+      onClick={[Function]}
     >
-      <button
-        className="button button_default"
-        onClick={[Function]}
-      >
-        NEUER EINTRAG
-      </button>
-    </div>
-    <div
-      className="mobile_button"
+      Open Modal
+    </button>
+    <button
+      onClick={[Function]}
     >
-      <button
-        className="button button_default_mobile"
-        onClick={[Function]}
-      >
-        +
-      </button>
-    </div>
+      Open Modal
+    </button>
     <div
       className="cards_section"
-    />
+    >
+      <div
+        onClick={[Function]}
+      >
+        A B
+      </div>
+    </div>
   </section>
 </main>
 `;

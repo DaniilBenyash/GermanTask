@@ -2,10 +2,10 @@ import { FC, MouseEvent, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import styles from "./Modal.module.scss";
 
-type PortalProps = { isOpen: boolean; children: React.ReactNode; onClose: () => void };
+export type ModalProps = { isOpen: boolean; children: React.ReactNode; onClose: () => void };
 const rootElement = document.getElementById("modal") || document.body;
 
-export const Modal: FC<PortalProps> = ({ isOpen, children, onClose }) => {
+export const Modal: FC<ModalProps> = ({ isOpen, children, onClose }) => {
   const handleClose = (event: MouseEvent) => {
     if (event.target !== event.currentTarget) return;
     onClose();

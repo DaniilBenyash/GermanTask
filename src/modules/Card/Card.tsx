@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./Card.module.scss";
 
-type CardProps = {
+export type CardProps = {
   title: string;
   email: string;
   onClick: () => void;
