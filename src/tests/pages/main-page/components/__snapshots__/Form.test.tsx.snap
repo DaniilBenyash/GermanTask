@@ -23,7 +23,7 @@ exports[`renders correctly 1`] = `
           className="input"
           name="firstname"
           onChange={[Function]}
-          placeholder=""
+          placeholder="Vorname*"
         />
         <label
           className="label"
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
           className="input"
           name="lastname"
           onChange={[Function]}
-          placeholder=""
+          placeholder="Nachname*"
         />
         <label
           className="label"
@@ -53,7 +53,7 @@ exports[`renders correctly 1`] = `
           className="input"
           name="email"
           onChange={[Function]}
-          placeholder=""
+          placeholder="E-Mail*"
         />
         <label
           className="label"

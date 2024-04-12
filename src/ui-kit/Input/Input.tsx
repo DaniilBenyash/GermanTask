@@ -11,7 +11,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ placeholder, onChange, name }, ref) => {
     return (
       <div className={styles.container}>
-        <input placeholder="" onChange={onChange} ref={ref} name={name} className={styles.input} />
+        <input placeholder={placeholder} onChange={onChange} ref={ref} name={name} className={styles.input} />
         <label className={styles.label}>{placeholder}</label>
       </div>
     );

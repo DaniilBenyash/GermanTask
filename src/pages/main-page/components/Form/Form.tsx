@@ -42,13 +42,25 @@ export const Form: FC<FormProps> = ({
     onCloseModal();
   };
   return (
-    <FormUI onSubmit={handleSubmit(onSubmit)}>
+    <FormUI onSubmit={handleSubmit(onSubmit)} data-testid="form">
       <div className={styles.data_container}>
         <h2 className={styles.title}>Eintrag bearbeiten</h2>
         <div className={styles.input_container}>
-          <Input placeholder="Vorname*" {...register("firstname", { required: true })} />
-          <Input placeholder="Nachname*" {...register("lastname", { required: true })} />
-          <Input placeholder="E-Mail*" {...register("email", { required: true })} />
+          <Input
+            data-testid="VornameInput"
+            placeholder="Vorname*"
+            {...register("firstname", { required: true })}
+          />
+          <Input
+            data-testid="NachnameInput"
+            placeholder="Nachname*"
+            {...register("lastname", { required: true })}
+          />
+          <Input
+            data-testid="E-MailInput"
+            placeholder="E-Mail*"
+            {...register("email", { required: true })}
+          />
         </div>
       </div>
       <div className={styles.button_container}>

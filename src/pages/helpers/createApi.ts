@@ -4,7 +4,7 @@ type ErrorResponseData = {
   Message: string;
 };
 
-const BASE_URL = "http://localhost:8022";
+const BASE_URL = "http://localhost:3000";
 
 export const createAPI = (path: string) => {
   const axiosInstance = axios.create({
@@ -17,9 +17,6 @@ export const createAPI = (path: string) => {
       if (!error.response) {
         throw new Error("Network error");
       }
-
-      console.log(error);
-
       throw error;
     },
   );
