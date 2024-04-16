@@ -16,30 +16,12 @@ exports[`renders correctly 1`] = `
   <section
     className="section"
   >
-    <div
-      className="desktop_button"
+    <button
+      className="button button_default desktop_button"
+      onClick={[Function]}
     >
-      <button
-        className="button button_default"
-        onClick={[Function]}
-      >
-        NEUER EINTRAG
-      </button>
-    </div>
-    <div
-      className="mobile_button"
-    >
-      <button
-        className="button button_default_mobile"
-        onClick={[Function]}
-      >
-        <p
-          className="plus"
-        >
-          +
-        </p>
-      </button>
-    </div>
+      NEUER EINTRAG
+    </button>
     <div
       className="cards_section"
     />

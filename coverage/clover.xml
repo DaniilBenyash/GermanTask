@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1712937206379" clover="3.2.0">
-  <project timestamp="1712937206379" name="All files">
-    <metrics statements="136" coveredstatements="106" conditionals="25" coveredconditionals="12" methods="44" coveredmethods="28" elements="205" coveredelements="146" complexity="0" loc="136" ncloc="136" packages="13" files="23" classes="23"/>
+<coverage generated="1713188992802" clover="3.2.0">
+  <project timestamp="1713188992802" name="All files">
+    <metrics statements="123" coveredstatements="93" conditionals="27" coveredconditionals="12" methods="40" coveredmethods="24" elements="190" coveredelements="129" complexity="0" loc="123" ncloc="123" packages="11" files="19" classes="19"/>
     <package name="src">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\App.tsx">
@@ -15,94 +15,80 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\index.ts">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="6" count="11" type="stmt"/>
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Button">
       <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
       <file name="Button.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Button\Button.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="11" count="11" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="12" type="stmt"/>
-        <line num="13" count="12" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="9" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Button\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="23" type="stmt"/>
+        <line num="1" count="16" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Card">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Card.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Card\Card.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="9" count="11" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Card\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="12" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.Form">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="Form.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Form\Form.tsx">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Form\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="13" type="stmt"/>
+        <line num="1" count="10" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Header">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Header.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Header\Header.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="2" count="11" type="stmt"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Header\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="16" type="stmt"/>
+        <line num="1" count="14" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Input">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Input.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Input\Input.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="10" count="11" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Input\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="15" type="stmt"/>
+        <line num="1" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Modal">
       <metrics statements="15" coveredstatements="12" conditionals="5" coveredconditionals="3" methods="5" coveredmethods="4"/>
       <file name="Modal.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Modal\Modal.tsx">
         <metrics statements="14" coveredstatements="11" conditionals="5" coveredconditionals="3" methods="4" coveredmethods="3"/>
-        <line num="1" count="11" type="stmt"/>
-        <line num="2" count="11" type="stmt"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="6" count="11" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="11" type="stmt"/>
+        <line num="1" count="9" type="stmt"/>
+        <line num="2" count="9" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="6" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="9" type="stmt"/>
         <line num="9" count="5" type="stmt"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="11" count="0" type="stmt"/>
@@ -115,37 +101,37 @@
       </file>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\components\Modal\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="16" type="stmt"/>
+        <line num="1" count="14" type="stmt"/>
       </file>
     </package>
     <package name="src.pages.main-page">
-      <metrics statements="25" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="2"/>
+      <metrics statements="25" coveredstatements="18" conditionals="8" coveredconditionals="5" methods="7" coveredmethods="2"/>
       <file name="MainPage.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\pages\main-page\MainPage.tsx">
-        <metrics statements="24" coveredstatements="17" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="1"/>
+        <metrics statements="24" coveredstatements="17" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="1"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
         <line num="5" count="3" type="stmt"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
         <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
-        <line num="15" count="4" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
       </file>
       <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\pages\main-page\index.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -180,23 +166,6 @@
         <line num="43" count="4" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.pages.main-page.components.Button">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="Button.tsx" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\pages\main-page\components\Button\Button.tsx">
-        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="2" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="10" count="4" type="stmt"/>
-        <line num="11" count="9" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="20" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="21" count="4" type="stmt"/>
-      </file>
-      <file name="index.ts" path="C:\Users\danii\OneDrive\Рабочий стол\Test\src\pages\main-page\components\Button\index.ts">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.pages.main-page.components.Form">

@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from "./Form.module.scss";
 import { Contact } from "../../../../types/types";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { Button, Input, Form as FormUI } from "../../../../components";
+import { Button, Input } from "../../../../components";
 
 type FormProps = {
   contact: Partial<Contact> | null;
@@ -42,7 +42,7 @@ export const Form: FC<FormProps> = ({
     onCloseModal();
   };
   return (
-    <FormUI onSubmit={handleSubmit(onSubmit)} data-testid="form">
+    <form onSubmit={handleSubmit(onSubmit)} data-testid="form">
       <div className={styles.data_container}>
         <h2 className={styles.title}>Eintrag bearbeiten</h2>
         <div className={styles.input_container}>
@@ -71,19 +71,19 @@ export const Form: FC<FormProps> = ({
       </div>
       <div className={styles.button_container}>
         {contact?.id && (
-          <Button type="secondary" onClick={handleDelete}>
+          <Button variant="secondary" onClick={handleDelete}>
             LÖSCHEN
           </Button>
         )}
         <div className={styles.right_section_buttons}>
-          <Button type="primary" onClick={onCloseModal}>
+          <Button variant="primary" onClick={onCloseModal}>
             ABBRECHEN
           </Button>
-          <Button type="default" disabled={!isValid}>
+          <Button variant="default" disabled={!isValid}>
             SPEICHERN
           </Button>
         </div>
       </div>
-    </FormUI>
+    </form>
   );
 };

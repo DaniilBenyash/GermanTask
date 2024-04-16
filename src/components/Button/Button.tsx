@@ -1,18 +1,14 @@
-import { FC, PropsWithChildren } from "react";
+import { DetailedHTMLProps, FC, HTMLAttributes, PropsWithChildren, ComponentProps } from "react";
 import styles from "./Button.module.scss";
 import cn from "classnames";
 
-interface ButtonProps extends PropsWithChildren {
-  type?: "default" | "primary" | "secondary" | "default_mobile";
-  onClick?: () => void;
-  disabled?: boolean;
+interface ButtonProps extends DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
+  variant?: "default" | "primary" | "secondary" | "default_mobile";
 }
 
-export const Button: FC<ButtonProps> = ({ type = "default", onClick, children, disabled }) => {
-  const className = cn(styles.button, styles[`button_${type}`]);
+export const Button: FC<ButtonProps> = ({ variant = "default", className, ...props }) => {
+  const combinedClassName = cn(styles.button, styles[`button_${variant}`], className);
   return (
-    <button className={className} onClick={onClick} disabled={disabled}>
-      {children}
-    </button>
+    <button {...props} className={combinedClassName} />
   );
 };

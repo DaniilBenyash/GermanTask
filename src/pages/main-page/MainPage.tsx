@@ -1,6 +1,5 @@
 import styles from "./MainPage.module.scss";
-import { Header, Card, Modal } from "../../components";
-import { Button } from "./components/Button";
+import { Header, Card, Modal, Button } from "../../components";
 import { Form } from "./components/Form";
 import { useState } from "react";
 import { useAddUser, useDeleteUser, useGetUsers, useUpdateUser } from "./api";
@@ -26,12 +25,15 @@ export const MainPage = () => {
     setIsOpenModal(true);
   };
 
+  const isMobile = window.innerWidth < 534;
+
   return (
     <main className={styles.main_page}>
       <Header />
       <section className={styles.section}>
-        <Button type="desktop" onClick={handleOpenModal} />
-        <Button type="mobile" onClick={handleOpenModal} />
+        <Button className={isMobile ? styles.mobile_button : styles.desktop_button} onClick={handleOpenModal}>
+          {isMobile ? <p className={styles.plus}>+</p> : 'NEUER EINTRAG'}
+        </Button>
         <div className={styles.cards_section}>
           {data?.map((contact) => {
             return (

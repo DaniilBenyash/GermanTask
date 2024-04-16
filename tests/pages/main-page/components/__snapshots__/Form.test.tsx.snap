@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <form
-  className="form"
+  data-testid="form"
   onSubmit={[Function]}
 >
   <div
@@ -21,7 +21,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="input"
+          data-testid="VornameInput"
           name="firstname"
+          onBlur={[Function]}
           onChange={[Function]}
           placeholder="Vorname*"
         />
@@ -36,7 +38,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="input"
+          data-testid="NachnameInput"
           name="lastname"
+          onBlur={[Function]}
           onChange={[Function]}
           placeholder="Nachname*"
         />
@@ -51,7 +55,9 @@ exports[`renders correctly 1`] = `
       >
         <input
           className="input"
+          data-testid="E-MailInput"
           name="email"
+          onBlur={[Function]}
           onChange={[Function]}
           placeholder="E-Mail*"
         />
